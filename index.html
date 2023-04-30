@@ -1,103 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>David Chu's China Bistro</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  </head>
 <body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="pull-left visible-md visible-lg">
+            <div id="logo-img" alt="Logo image"></div>
+          </a>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#" >The Nonvegeria,In</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-    
-      <ul class="nav navbar-nav navbar-right" >
-        <li style>
-        <a href="#" > 
-        <span class="glyphicon glyphicon-cutlery"></span> Chicken</a>
-        </li>
-        <li>
-        <a href="#" >
-        <span class="glyphicon glyphicon-info-sign"></span> Mutton</a>
-        </li>
-        <li>
-        <a href="#">
-        <span class="glyphicon glyphicon-certificate"></span> Sushi</a>
-        </li>
-      </ul>
-    </div>
+          <div class="navbar-brand">
+            <a href="index.html"><h1>David Chu's China Bistro</h1></a>
+            <p>
+              <img src="images/star-k-logo.png" alt="Kosher certification">
+              <span>Kosher Certified</span>
+            </p>
+          </div>
+
+          <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li id="navHomeButton" class="visible-xs active">
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span> Home</a>
+            </li>
+            <li id="navMenuButton">
+              <a href="#" onclick="$dc.loadMenuCategories();">
+                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
+            </li>
+            <li id="phone" class="hidden-xs">
+              <a href="tel:410-602-5008">
+                <span>410-602-5008</span></a><div>* We Deliver</div>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+
+  <div id="call-btn" class="visible-xs">
+    <a class="btn" href="tel:410-602-5008">
+    <span class="glyphicon glyphicon-earphone"></span>
+    410-602-5008
+    </a>
   </div>
-</nav>
-<br>
-<br>  
-<h1><p class="text-center">Our Menu</p></h1>
+  <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
 
+  <div id="main-content" class="container"></div>
 
-<div id="main-content" class="container">
-  <div id="home-tiles" class="row">
-      <div class="col-md-12 col-sm-12 col-xs-12">
-            
-            <p id="chickstory">
-          <h2>Chicken</h2>
-            Chicken is a popular ingredient in many non-vegetarian dishes. It is a versatile protein that can be prepared in a variety of ways, including grilled, fried, baked, and roasted. Chicken is also a relatively affordable meat, making it a popular choice for restaurants to include on their menus.
-
-Chicken can be used in a wide range of dishes, from classic comfort foods like fried chicken and chicken pot pie to more exotic dishes like chicken tikka masala and Thai chicken curry. Some popular chicken-based dishes at restaurants include chicken fajitas, chicken Parmesan, and chicken Alfredo.
-
-One of the benefits of chicken is that it can be paired with a variety of different flavors and ingredients. For example, chicken can be paired with spicy sauces and marinades, like buffalo sauce or sriracha, or with more savory flavors like garlic and herbs. Chicken can also be combined with vegetables, like in stir-fries and salads, to create a balanced and nutritious meal.
-
-In terms of non-vegetarian food, restaurants that serve meat-based dishes have a wide variety of options to choose from. Along with chicken, restaurants may serve beef, pork, lamb, and seafood. These meats can be used in a variety of different ways, such as grilled, roasted, or sautéed. Some popular non-vegetarian dishes include steak, hamburgers, barbecue ribs, and seafood pasta.
-
-Non-vegetarian dishes can be enjoyed by many people, but it's important for restaurants to accommodate customers with dietary restrictions. For example, restaurants may offer vegetarian and vegan options, or gluten-free and dairy-free options for customers with specific dietary needs.
-
-Overall, chicken and non-vegetarian food are popular choices for restaurants and customers alike. With so many different ways to prepare and serve chicken and other meats, restaurants can offer a diverse range of dishes that appeal to a wide variety of tastes and preferences.
-        </p>
-        <p id="chickstory">
-          <h2>Mutton</h2> mutton is a popular meat that is used in a variety of dishes. Mutton is the meat of adult sheep and is known for its rich flavor and tenderness. It is a common ingredient in many cuisines around the world, including Indian, Middle Eastern, and European.
-
-          Mutton can be used in a variety of dishes, from stews and curries to grilled and roasted dishes. Some popular mutton-based dishes at restaurants include mutton biryani, mutton korma, and lamb chops. Mutton can also be used in traditional dishes like shepherd's pie and Irish stew.
-          
-          One of the benefits of mutton is its versatility. Mutton can be paired with a variety of different spices and ingredients to create a range of flavors and textures. Mutton pairs well with bold flavors like garlic, rosemary, and cumin, as well as with more subtle flavors like mint and lemon.
-          
-          Mutton can also be a more premium meat, making it a popular choice for fine dining restaurants. Mutton can be aged to enhance its flavor and tenderness, making it a more luxurious option for diners. Additionally, mutton can be served as part of a tasting menu or as a special feature, allowing restaurants to showcase the unique flavors and textures of this meat.
-          
-          In terms of sustainability, restaurants may choose to source their mutton from local farms or from suppliers who prioritize ethical and sustainable farming practices. This can be an important consideration for restaurants that want to offer high-quality meat while also supporting environmentally conscious practices.
-          
-          Overall, mutton is a versatile and flavorful meat that can be used in a variety of dishes. Whether it's served as part of a traditional stew or as a more upscale dish, mutton can be a popular choice for diners who enjoy the rich flavors and textures of this meat.
-          </p>
-
-        <p id="chickstory">
-          <h2>Sushi</h2>sushi is a popular Japanese dish that has gained widespread popularity around the world. Sushi is typically made with vinegared rice, seafood, and vegetables, and can be served in a variety of different styles and presentations.
-
-Sushi is typically associated with raw fish, but it can also be made with cooked seafood, such as shrimp or eel. Additionally, sushi can be made with a variety of different vegetables, like avocado, cucumber, and carrot, to create a range of flavors and textures.
-
-One of the benefits of sushi is that it can be presented in a visually stunning way, making it a popular choice for high-end restaurants and special occasions. Sushi can be arranged in intricate designs and patterns, and can be served on decorative plates and platters.
-
-Sushi is also a healthy option for diners, as it is typically low in fat and calories. Sushi can be a good source of protein, omega-3 fatty acids, and other nutrients. Additionally, sushi can be customized to meet the dietary needs of different diners, with options for vegetarian, vegan, and gluten-free diets.
-
-In terms of sustainability, restaurants may choose to source their seafood from suppliers who use sustainable fishing practices. This can be an important consideration for restaurants that want to offer high-quality sushi while also supporting environmentally conscious practices.
-
-Overall, sushi is a versatile and visually stunning dish that can be enjoyed by a wide range of diners. Whether it's served as part of a traditional sushi platter or as a more upscale dish, sushi can be a popular choice for diners who enjoy the unique flavors and textures of this Japanese cuisine.
-
-
-
-
-
-        </p>
+  <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          <span>Hours:</span><br>
+          Sun-Thurs: 11:15am - 10:00pm<br>
+          Fri: 11:15am - 2:30pm<br>
+          Saturday Closed
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-4">
+          <span>Address:</span><br>
+          7105 Reisterstown Road<br>
+          Baltimore, MD 21215
+          <p>* Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p>
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-4">
+          <p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
+          <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+        </section>
       </div>
+      <div class="text-center">&copy; Copyright David Chu's China Bistro 2016</div>
     </div>
-</div>
+  </footer>
 
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ajax-utils.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
